@@ -1,0 +1,11 @@
+﻿<parameters>
+  
+  
+    
+    <parameter name="webpages:Enabled" description="Description for webpages:Enabled" defaultvalue="__WEBPAGES:ENABLED__" tags="">
+    <parameterentry kind="XmlFile" scope="\\web.config$" match="/configuration/appSettings/add[@key='webpages:Enabled']/@value" />
+    </parameter>
+  
+    
+    
+</parameters>
