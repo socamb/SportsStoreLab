@@ -73,7 +73,8 @@ namespace SportsStore.WebUI.Controllers
 
             if (ModelState.IsValid)
             {
-                orderProcessor.ProcessOrder(cart, shippinfDetails);
+                // This is commented out for the lab
+                // orderProcessor.ProcessOrder(cart, shippinfDetails);
                 cart.Clear();
                 return View("Completed");
             } else {
@@ -81,18 +82,6 @@ namespace SportsStore.WebUI.Controllers
             }
 
         }
-
-        // This maintains our cart in session state.
-        // THis was removed in this version and uses model binding instead.
-        //private Cart GetCart()
-        //{
-        //    Cart cart = (Cart)Session["Cart"];
-        //    if (cart == null) {
-        //        cart = new Cart();
-        //        Session["Cart"] = cart;
-        //    }
-        //    return cart;
-        //}
 
 
     }

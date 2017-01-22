@@ -79,13 +79,11 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Products.sql" />
-    <Build Include="dbo\Tables\Employee.sql" />
     <Build Include="dbo\Views\vEmployee.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dbo.Products.data.sql" />
     <None Include="dbo\Scripts\ProductData.sql" />
-    <None Include="dbo\Scripts\EmployeeData.sql" />
     <None Include="PublishProfiles\SportsStoreDB.publish.xml" />
     <None Include="SportsStoreDB.publish.xml" />
   </ItemGroup>

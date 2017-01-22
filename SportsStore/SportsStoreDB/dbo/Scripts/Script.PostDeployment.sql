@@ -11,4 +11,3 @@ Post-Deployment Script Template
 */
 -- Load test product data if not present.
 :r .\ProductData.sql
-:r .\EmployeeData.sql
