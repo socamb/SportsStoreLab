@@ -21,7 +21,7 @@ namespace SportsStore.Tests
 
         [TestMethod]
         [TestCategory("Nightly_Build")]
-        public void Can_ABC()
+        public void Can_AddProductToDb()
         {
             IProductRepository myProductRepo = new EFProductRepository();
             Product myProduct = new Product { Name = "xxx", Category = "123", Description = "desc", Price = 20m };
