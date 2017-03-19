@@ -31,7 +31,9 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("1.2.1.0")]
+// We keep the version we are developing proper here. The builds will change this and add build number
+// Is there a better way?? 
+[assembly: AssemblyVersion("1.0.2.0")]
 [assembly: AssemblyInformationalVersion("1.2.0.0")]
 [assembly: AssemblyFileVersion("1.2.0.0")]
 
