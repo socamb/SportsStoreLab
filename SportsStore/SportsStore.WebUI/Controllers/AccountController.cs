@@ -32,7 +32,7 @@ namespace SportsStore.WebUI.Controllers
                     return Redirect(returnUrl ?? Url.Action("Indexs", "Admin"));
                 } else
                 {
-                    ModelState.AddModelError("", "Incorrect Username or Passwordzzzzzzz");
+                    ModelState.AddModelError("", "Incorrect Username or Password");
                     return View();
                 }
             } else
