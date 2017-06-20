@@ -2,7 +2,7 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
-    <TargetDatabaseName>SportsStoreDBz</TargetDatabaseName>
+    <TargetDatabaseName>SportsStoreDB</TargetDatabaseName>
     <DeployScriptFileName>SportsStoreDB.sql</DeployScriptFileName>
     <BlockOnPossibleDataLoss>False</BlockOnPossibleDataLoss>
     <ProfileVersionNumber>1</ProfileVersionNumber>
