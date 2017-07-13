@@ -5,10 +5,7 @@
         match="/configuration/appSettings/add[@key='MyVal1']/@value" />
   </parameter>
   
-  <parameter name="EFDbContext" description="Database Connection String" defaultvalue="__EFDbContext__" tags="">
-    <parameterentry kind="XmlFile" scope="\\web.config$"
-        match="/configuration/connectionStrings/add[@name='EFDbContext']/@connectionString" />
-  </parameter>
+
 
     
 </parameters>
