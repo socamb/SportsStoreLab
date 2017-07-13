@@ -7,7 +7,7 @@
   
   <parameter name="EFDbContext" description="Database Connection String" defaultvalue="__EFDbContext__" tags="">
     <parameterentry kind="XmlFile" scope="\\web.config$"
-        match="/configuration/connectionStrings/add[@name='EFDbContext']/@value" />
+        match="/configuration/connectionStrings/add[@name='EFDbContext']/@connectionString" />
   </parameter>
 
     
