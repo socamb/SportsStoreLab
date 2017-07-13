@@ -1,8 +1,14 @@
 ﻿<parameters>
  
-    <parameter name="MyVal1" description="Description for ReplyURL" defaultvalue="__MyVal1__" tags="">
+  <parameter name="MyVal1" description="Description for ReplyURL" defaultvalue="__MyVal1__" tags="">
     <parameterentry kind="XmlFile" scope="\\web.config$"
         match="/configuration/appSettings/add[@key='MyVal1']/@value" />
   </parameter>
+  
+  <parameter name="EFDbContext" description="Database Connection String" defaultvalue="__EFDbContext__" tags="">
+    <parameterentry kind="XmlFile" scope="\\web.config$"
+        match="/configuration/connectionStrings/add[@name='EFDbContext']/@value" />
+  </parameter>
+
     
 </parameters>
