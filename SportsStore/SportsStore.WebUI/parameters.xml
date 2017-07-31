@@ -1,8 +1,13 @@
 ﻿<parameters>
  
-  <parameter name="MyVal1" description="Description for ReplyURL" defaultvalue="__MyVal1__" tags="">
+  <parameter name="MyVal1" description="Value 1" defaultvalue="__MyVal1__" tags="">
     <parameterentry kind="XmlFile" scope="\\web.config$"
         match="/configuration/appSettings/add[@key='MyVal1']/@value" />
+  </parameter>
+
+  <parameter name="MyVal2" description="Value 2" defaultvalue="__MyVal2__" tags="">
+    <parameterentry kind="XmlFile" scope="\\web.config$"
+        match="/configuration/appSettings/add[@key='MyVal2']/@value" />
   </parameter>
   
 
