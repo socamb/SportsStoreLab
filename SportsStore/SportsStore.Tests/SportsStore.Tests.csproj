@@ -116,13 +116,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AdminTests.cs" />
+    <Compile Include="CI\AdminTests.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
-    <Compile Include="CartTests.cs" />
+    <Compile Include="CI\CartTests.cs" />
     <Compile Include="CI\MathTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Integration\DatabaseTests.cs" />
-    <Compile Include="UITests.cs" />
+    <Compile Include="CI\UITests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SportsStore.Domain\SportsStore.Domain.csproj">
@@ -139,6 +139,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Selenium\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
