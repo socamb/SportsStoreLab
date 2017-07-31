@@ -10,7 +10,7 @@ namespace SportsStore.Tests.CI
         [TestCategory("CI_Build")]
         public void AddTests()
         {
-            Assert.AreEqual(1, 1);
+            Assert.AreEqual(1, 2);
         }
     }
 }
