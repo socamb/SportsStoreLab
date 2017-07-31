@@ -11,7 +11,7 @@ using SportsStore.WebUI.Models;
 using SportsStore.WebUI.HtmlHelpers;
 using SportsStore.Domain.Concrete;
 
-namespace SportsStore.Tests
+namespace SportsStore.Tests.CI
 {
     [TestClass]
     public class UITests
