@@ -119,9 +119,9 @@
     <Compile Include="AdminTests.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="CartTests.cs" />
-    <Compile Include="MathTests.cs" />
+    <Compile Include="CI\MathTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DatabaseTests.cs" />
+    <Compile Include="Integration\DatabaseTests.cs" />
     <Compile Include="UITests.cs" />
   </ItemGroup>
   <ItemGroup>
