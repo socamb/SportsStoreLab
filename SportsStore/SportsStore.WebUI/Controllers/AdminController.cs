@@ -41,7 +41,8 @@ namespace SportsStore.WebUI.Controllers
                     image.InputStream.Read(product.ImageData, 0, image.ContentLength);
                 }
 
-                product.Description = product.Description + "aa";
+                // Fake Bug here
+                product.Description = product.Description;
 
                 repository.SaveProduct(product);
                 TempData["message"] = string.Format("{0} has been saved", product.Name);
