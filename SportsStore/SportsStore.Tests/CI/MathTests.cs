@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SportsStore.Tests
+namespace SportsStore.Tests.CI
 {
     [TestClass]
     public class MathTests

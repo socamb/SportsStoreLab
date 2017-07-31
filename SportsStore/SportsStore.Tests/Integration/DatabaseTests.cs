@@ -6,7 +6,7 @@ using SportsStore.Domain.Concrete;
 using SportsStore.Domain.Entities;
 using System.Collections.Generic;
 
-namespace SportsStore.Tests
+namespace SportsStore.Tests.Integration
 {
     [TestClass]
     public class DatabaseTests
