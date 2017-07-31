@@ -21,7 +21,7 @@ namespace SportsStore.Tests.Selenium
 
 
         [TestMethod]
-        [TestCategory("CI_Build")]
+        [TestCategory("Nightly_Build")]
         // Goal is to make the unit test easy to develop and self documenting.
         public void Selenium_Admin_User_Can_Login()
         {
