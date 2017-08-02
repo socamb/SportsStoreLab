@@ -23,9 +23,11 @@ namespace SportsStoreAutomation
                     var h3s = Driver.Instance.FindElements(By.TagName("h3"));
                     return h3s[0].Text;
                 }
+                // If the element is not found, this exception is thrown. This will cause the assert to fail 
+                // in the test
                 catch (OpenQA.Selenium.NoSuchElementException e)
                 {
-                    return "NoSuchElementExteproion - Login Error";
+                    return "NoSuchElementException - Login Error";
                 }
    
             }
