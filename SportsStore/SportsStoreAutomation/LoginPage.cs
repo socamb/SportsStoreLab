@@ -36,7 +36,7 @@ namespace SportsStoreAutomation
     }
 
 
-    // THis allows any user/password to login to the admin page.
+    // This allows any user/password to login to the admin page.
     public class LoginCommand
     {
         private readonly string userName;
@@ -53,7 +53,7 @@ namespace SportsStoreAutomation
             return this;
         }
 
-        // This is the actual test login that is used by the unit test procect.
+        // This is the actul code that acceses the webpage using Selenium WebDriver
         public void Login()
         {
             var loginInput = Driver.Instance.FindElement(By.Id("UserName"));
