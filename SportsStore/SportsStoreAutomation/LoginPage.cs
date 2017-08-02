@@ -17,10 +17,13 @@ namespace SportsStoreAutomation
     public class LoginPage
     {
 
+
         // This navigates to the site. There will be a drive for each type of Browser.
         public static void GoTo()
         {
-           Driver.Instance.Navigate().GoToUrl("http://ocambssqaweb.azurewebsites.net/admin/index");
+            string Url = "http://ocambssbuildweb.azurewebsites.net/admin/index";
+            //string Url = "http://localhost:51917/admin/index";
+            Driver.Instance.Navigate().GoToUrl(Url);
         }
 
         // We start with LoginAs. It uses the LoginCommand class designed in a way
