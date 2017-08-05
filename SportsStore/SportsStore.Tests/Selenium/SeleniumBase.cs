@@ -10,7 +10,7 @@ using SportsStoreAutomation;
 namespace SportsStore.Tests.Selenium
 {
 
-    // This base class is used by all of our Selenium tests
+    // This base class is used by all of our Selenium tests (a)
     public class SeleniumBase
     {
 
