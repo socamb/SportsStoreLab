@@ -13,19 +13,42 @@ namespace SportsStore.Tests.Selenium
     [TestClass]
     public class LoginTests
     {
+
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+        private TestContext testContextInstance;
+
+        private string Url;
+
+
         [TestInitialize]
         public void Init()
         {
+
+            //Url = "http://ocambssbuildweb.azurewebsites.net/admin/index";
+            //string Url = "http://localhost:51917/admin/index";
+
+            Url = TestContext.Properties["appUrl"].ToString();
+
             Driver.Initalize();
         }
 
 
         [TestMethod]
-        [TestCategory("Nightly_Buildz")]
+        [TestCategory("Nightly_Build")]
         // Goal is to make the unit test easy to develop and self documenting.
         public void Selenium_Admin_User_Can_Login()
         {
-            LoginPage.GoTo();
+            LoginPage.GoTo(Url);
             LoginPage.LoginAs("Admin").WithPassword("TopSecret").Login();
             Assert.AreEqual("All Products", MaintenancePage.AllProducts, "Failed to Login");
         }
