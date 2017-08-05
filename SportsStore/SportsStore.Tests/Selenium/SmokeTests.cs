@@ -21,6 +21,16 @@ namespace SportsStore.Tests.Selenium
             Assert.AreEqual("All Products", MaintenancePage.AllProducts, "Failed to Login");
         }
 
+        [TestMethod]
+        [TestCategory("Nightly_Build")]
+        public void Selenium_Can_Add_Product()
+        {
+            LoginPage.GoTo(Url);
+            LoginPage.LoginAs("Admin").WithPassword("TopSecret").Login();
+            //MaintenancePage.AddProduct(name, description,price,category)
+            //MaintenancePage.IsCategoryPresent()
+            //MaintenencePage.DeleteCategory(Category)
+        }
 
 
         
