@@ -19,9 +19,9 @@ namespace SportsStoreAutomation
 
 
         // This navigates to the site. There will be a drive for each type of Browser.
-        public static void GoTo()
+        public static void GoTo(string Url)
         {
-            string Url = "http://ocambssbuildweb.azurewebsites.net/admin/index";
+            //string Url = "http://ocambssbuildweb.azurewebsites.net/admin/index";
             //string Url = "http://localhost:51917/admin/index";
             Driver.Instance.Navigate().GoToUrl(Url);
         }

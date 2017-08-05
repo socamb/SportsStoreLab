@@ -153,6 +153,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+    <None Include="test.runsettings" />
   </ItemGroup>
   <ItemGroup />
   <Choose>
