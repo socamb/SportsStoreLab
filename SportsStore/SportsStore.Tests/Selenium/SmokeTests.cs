@@ -20,6 +20,9 @@ namespace SportsStore.Tests.Selenium
             LoginPage.LoginAs("Admin").WithPassword("TopSecret").Login();
             Assert.AreEqual("All Products", MaintenancePage.AllProducts, "Failed to Login");
         }
+
+
+
         
     }
 }
