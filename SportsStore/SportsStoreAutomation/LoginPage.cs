@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using OpenQA.Selenium;
 using System.Threading;
 
@@ -21,8 +16,6 @@ namespace SportsStoreAutomation
         // This navigates to the site. There will be a drive for each type of Browser.
         public static void GoTo(string Url)
         {
-            //string Url = "http://ocambssbuildweb.azurewebsites.net/admin/index";
-            //string Url = "http://localhost:51917/admin/index";
             Driver.Instance.Navigate().GoToUrl(Url);
         }
 
@@ -53,7 +46,7 @@ namespace SportsStoreAutomation
             return this;
         }
 
-        // This is the actul code that acceses the webpage using Selenium WebDriver
+        // This is the actual code that acceses the webpage using Selenium WebDriver
         public void Login()
         {
             var loginInput = Driver.Instance.FindElement(By.Id("UserName"));
