@@ -13,7 +13,7 @@ namespace SportsStoreAutomation
 
         // This adds a product to toe Product Catalog.
         public static void AddNewProduct(string Name, string Description, 
-            string Price, string Category)
+            decimal Price, string Category)
         {
     
             var addButton = Driver.Instance.FindElement(By.Id("AddNewProduct"));
@@ -27,7 +27,7 @@ namespace SportsStoreAutomation
 
             var priceInput = Driver.Instance.FindElement(By.Id("Price"));
             priceInput.Clear();
-            priceInput.SendKeys(Price);
+            priceInput.SendKeys(Price.ToString());
 
             var categoryInput = Driver.Instance.FindElement(By.Id("Category"));
             categoryInput.SendKeys(Category);
@@ -36,7 +36,21 @@ namespace SportsStoreAutomation
             saveButton.Click();
         }
 
-    
+        public static void SelectProduct(string Name)
+        {
+            try
+            {
+                var productLink = Driver.Instance.FindElement(By.LinkText(Name));
+                productLink.Click();
+            }
+            catch (OpenQA.Selenium.NoSuchElementException e)
+            {
+                
+            }
+
+        }
+
+
         // If we are on the Maintenance Page, this element = "All Products"
         public static string AllProducts
         {
@@ -54,6 +68,24 @@ namespace SportsStoreAutomation
                     return "NoSuchElementException - Login Error";
                 }
            }
+        }
+
+        public static string ReturnPageTitle
+        {
+            get
+            {
+                try
+                {
+                    var h3s = Driver.Instance.FindElements(By.TagName("h3"));
+                    return h3s[0].Text;
+                }
+                // If the element is not found, this exception is thrown. This will cause the assert to fail 
+                // in the test
+                catch (OpenQA.Selenium.NoSuchElementException e)
+                {
+                    return "NoSuchElementException - Login Error";
+                }
+            }
         }
 
 

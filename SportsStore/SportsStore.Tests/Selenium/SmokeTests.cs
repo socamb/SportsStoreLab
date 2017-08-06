@@ -18,7 +18,7 @@ namespace SportsStore.Tests.Selenium
         {
             LoginPage.GoTo(Url);
             LoginPage.LoginAs("Admin").WithPassword("TopSecret").Login();
-            Assert.AreEqual("All Products", MaintenancePage.AllProducts, "Failed to Login");
+            Assert.AreEqual("All Products", MaintenancePage.ReturnPageTitle, "Failed to Login");
         }
 
         [TestMethod]
@@ -27,8 +27,13 @@ namespace SportsStore.Tests.Selenium
         {
             LoginPage.GoTo(Url);
             LoginPage.LoginAs("Admin").WithPassword("TopSecret").Login();
-            MaintenancePage.AddNewProduct("SelName", "SelDescription", "1", "Selenium");
-            //MaintenancePage.IsCategoryPresent()
+            MaintenancePage.AddNewProduct("SelName", "SelDescription", 2, "Selenium");
+            MaintenancePage.SelectProduct("SelName");
+            Assert.AreEqual("Edit SelName", MaintenancePage.ReturnPageTitle, "Invalid Product");
+
+            //MaintenancePage.ValidateProduct("SelName", "SelDescription", 2, "Selenium");
+
+
             //MaintenencePage.DeleteCategory(Category)
         }
 
