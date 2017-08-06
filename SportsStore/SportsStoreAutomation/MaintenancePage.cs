@@ -41,7 +41,7 @@ namespace SportsStoreAutomation
         }
 
 
-        // THis selects a Product from the Maintenence Page
+        // This selects a Product from the Maintenence Page
         public static void SelectProduct(string Name)
         {
             try
@@ -56,27 +56,8 @@ namespace SportsStoreAutomation
 
         }
 
-
-        //// If we are on the Maintenance Page, this element = "All Products"
-        //public static string AllProducts
-        //{
-        //    get
-        //    {
-        //        try
-        //        {
-        //            var h3s = Driver.Instance.FindElements(By.TagName("h3"));
-        //            return h3s[0].Text;
-        //        }
-        //        // If the element is not found, this exception is thrown. This will cause the assert to fail 
-        //        // in the test
-        //        catch (OpenQA.Selenium.NoSuchElementException e)
-        //        {
-        //            return "NoSuchElementException - Login Error";
-        //        }
-        //   }
-        //}
-
-        // THis retiurn the title from the Maintenance Page. We use this in asserts
+        
+        // This retiurn the title from the Maintenance Page. We use this in asserts
         // in out unit tests.
         public static string ReturnPageTitle
         {
