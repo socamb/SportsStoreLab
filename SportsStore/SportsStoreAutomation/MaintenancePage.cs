@@ -11,15 +11,39 @@ namespace SportsStoreAutomation
     public class MaintenancePage
     {
 
+        // This adds a product to toe Product Catalog.
+        public static void AddNewProduct(string Name, string Description, 
+            string Price, string Category)
+        {
+    
+            var addButton = Driver.Instance.FindElement(By.Id("AddNewProduct"));
+            addButton.Click();
+
+            var nameInput = Driver.Instance.FindElement(By.Id("Name"));
+            nameInput.SendKeys(Name);
+
+            var descriptionInput = Driver.Instance.FindElement(By.Id("Description"));
+            descriptionInput.SendKeys(Name);
+
+            var priceInput = Driver.Instance.FindElement(By.Id("Price"));
+            priceInput.Clear();
+            priceInput.SendKeys(Price);
+
+            var categoryInput = Driver.Instance.FindElement(By.Id("Category"));
+            categoryInput.SendKeys(Category);
+
+            var saveButton = Driver.Instance.FindElement(By.Id("SaveProduct"));
+            saveButton.Click();
+        }
+
+    
+        // If we are on the Maintenance Page, this element = "All Products"
         public static string AllProducts
         {
             get
             {
-
-                // Still expermenting how to do this best. For now it is done this way.
                 try
                 {
-                    var AddProduct = Driver.Instance.FindElement(By.Id("Add-New-Product"));
                     var h3s = Driver.Instance.FindElements(By.TagName("h3"));
                     return h3s[0].Text;
                 }
@@ -29,9 +53,7 @@ namespace SportsStoreAutomation
                 {
                     return "NoSuchElementException - Login Error";
                 }
-   
-            }
-
+           }
         }
 
 
