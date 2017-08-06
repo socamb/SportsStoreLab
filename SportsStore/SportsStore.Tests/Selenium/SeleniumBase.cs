@@ -33,7 +33,6 @@ namespace SportsStore.Tests.Selenium
         }
 
 
-
         // Close the driver and handle runtime errors
         [TestCleanup]
         public void Cleanup()

@@ -6,13 +6,11 @@ namespace SportsStoreAutomation
 {
 
     /// <summary>
-    /// This uses the Fluent API Approach. It uses static methods and OOP Constructs
-    /// So developing Unit Tests are easy
+    /// This uses an approach for make the API Easy. It uses static methods and 
+    /// OOP Constructs so developing Unit Tests are easy
     /// </summary>
     public class LoginPage
     {
-
-
         // This navigates to the site. There will be a drive for each type of Browser.
         public static void GoTo(string Url)
         {
@@ -27,7 +25,6 @@ namespace SportsStoreAutomation
         }
 
     }
-
 
     // This allows any user/password to login to the admin page.
     public class LoginCommand
