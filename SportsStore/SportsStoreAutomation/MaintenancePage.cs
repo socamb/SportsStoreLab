@@ -8,10 +8,14 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SportsStoreAutomation
 {
+
+    /// <summary>
+    /// Here we have Selenium WebDriver tests for the Maintenance Page
+    /// </summary>
     public class MaintenancePage
     {
 
-        // This adds a product to toe Product Catalog.
+        // This adds a product to the Product Catalog.
         public static void AddNewProduct(string Name, string Description, 
             decimal Price, string Category)
         {
@@ -36,6 +40,8 @@ namespace SportsStoreAutomation
             saveButton.Click();
         }
 
+
+        // THis selects a Product from the Maintenence Page
         public static void SelectProduct(string Name)
         {
             try
@@ -51,25 +57,27 @@ namespace SportsStoreAutomation
         }
 
 
-        // If we are on the Maintenance Page, this element = "All Products"
-        public static string AllProducts
-        {
-            get
-            {
-                try
-                {
-                    var h3s = Driver.Instance.FindElements(By.TagName("h3"));
-                    return h3s[0].Text;
-                }
-                // If the element is not found, this exception is thrown. This will cause the assert to fail 
-                // in the test
-                catch (OpenQA.Selenium.NoSuchElementException e)
-                {
-                    return "NoSuchElementException - Login Error";
-                }
-           }
-        }
+        //// If we are on the Maintenance Page, this element = "All Products"
+        //public static string AllProducts
+        //{
+        //    get
+        //    {
+        //        try
+        //        {
+        //            var h3s = Driver.Instance.FindElements(By.TagName("h3"));
+        //            return h3s[0].Text;
+        //        }
+        //        // If the element is not found, this exception is thrown. This will cause the assert to fail 
+        //        // in the test
+        //        catch (OpenQA.Selenium.NoSuchElementException e)
+        //        {
+        //            return "NoSuchElementException - Login Error";
+        //        }
+        //   }
+        //}
 
+        // THis retiurn the title from the Maintenance Page. We use this in asserts
+        // in out unit tests.
         public static string ReturnPageTitle
         {
             get
@@ -83,7 +91,7 @@ namespace SportsStoreAutomation
                 // in the test
                 catch (OpenQA.Selenium.NoSuchElementException e)
                 {
-                    return "NoSuchElementException - Login Error";
+                    return "NoSuchElementException - Element not found on Maintenance Page";
                 }
             }
         }
