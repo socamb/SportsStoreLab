@@ -27,7 +27,7 @@ namespace SportsStore.Tests.Selenium
         {
             LoginPage.GoTo(Url);
             LoginPage.LoginAs("Admin").WithPassword("TopSecret").Login();
-            MaintenancePage.AddNewProduct("SelName", "SelDescription", 2, "Selenium");
+            MaintenancePage.AddNewProduct("SelNamez", "SelDescription", 2, "Selenium");
             MaintenancePage.SelectProduct("SelName");
             Assert.AreEqual("Edit SelName", MaintenancePage.ReturnPageTitle, "Invalid Product");
 
