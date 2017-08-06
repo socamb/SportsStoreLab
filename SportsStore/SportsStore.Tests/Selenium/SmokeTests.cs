@@ -27,7 +27,7 @@ namespace SportsStore.Tests.Selenium
         {
             LoginPage.GoTo(Url);
             LoginPage.LoginAs("Admin").WithPassword("TopSecret").Login();
-            //MaintenancePage.AddProduct(name, description,price,category)
+            MaintenancePage.AddNewProduct("SelName", "SelDescription", "1", "Selenium");
             //MaintenancePage.IsCategoryPresent()
             //MaintenencePage.DeleteCategory(Category)
         }
