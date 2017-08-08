@@ -28,6 +28,7 @@ namespace SportsStore.Tests.Selenium
         [TestInitialize]
         public void Init()
         {
+            // Gets url from test.runsettings
             Url = TestContext.Properties["appUrl"].ToString();
             Driver.Initalize();
         }
