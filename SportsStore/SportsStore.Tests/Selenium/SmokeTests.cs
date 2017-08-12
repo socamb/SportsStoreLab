@@ -11,7 +11,7 @@ namespace SportsStore.Tests.Selenium
     public class LoginTests : SeleniumBase
     {
         [TestMethod]
-        [TestCategory("Nightly_Build")]
+        [TestCategory("Nightly_Buildz")]
         public void Selenium_Admin_User_Can_Login()
         {
             LoginPage.GoTo(Url);
@@ -21,7 +21,7 @@ namespace SportsStore.Tests.Selenium
         }
 
         [TestMethod]
-        [TestCategory("Nightly_Build")]
+        [TestCategory("Nightly_Buildz")]
         public void Selenium_Can_Add_Product()
         {
             LoginPage.GoTo(Url);
