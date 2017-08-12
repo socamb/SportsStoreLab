@@ -14,6 +14,10 @@ namespace SportsStoreAutomation
         public static void Initalize()
         {
             Instance = new FirefoxDriver();
+
+            // This is where Selinium Server would be setup. See if this works first then come up with 
+            // A good implementation
+
             Instance.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
         }
 
