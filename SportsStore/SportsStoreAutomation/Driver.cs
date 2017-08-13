@@ -2,6 +2,7 @@
 
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Remote;
 
 namespace SportsStoreAutomation
 {
@@ -14,6 +15,13 @@ namespace SportsStoreAutomation
         public static void Initalize()
         {
             Instance = new FirefoxDriver();
+
+            // This is where Selinium Server would be setup. See if this works first then come up with 
+            // A good implementation
+
+            //Instance = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"),
+            //                               DesiredCapabilities.Firefox());
+
             Instance.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
         }
 
