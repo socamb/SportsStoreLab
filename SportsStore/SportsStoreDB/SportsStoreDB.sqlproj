@@ -76,6 +76,7 @@
     <Folder Include="dbo\Security\Users" />
     <Folder Include="dbo\Scripts\SiteBuildout_Deploy" />
     <Folder Include="PublishProfiles" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Products.sql" />
@@ -86,6 +87,7 @@
     <None Include="dbo\Scripts\ProductData.sql" />
     <None Include="PublishProfiles\SportsStoreDB.publish.xml" />
     <None Include="SportsStoreDB.publish.xml" />
+    <None Include="Scripts\FixLocalDB.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SportsStoreDB.refactorlog" />
