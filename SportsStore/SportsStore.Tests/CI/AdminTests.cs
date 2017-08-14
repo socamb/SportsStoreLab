@@ -9,7 +9,7 @@ using System.Web.Mvc;
 using SportsStore.WebUI.Models;
 using System.Collections.Generic;
 
-namespace SportsStore.UnitTests
+namespace SportsStore.UnitTests.CI
 {
     [TestClass]
     public class AdminTests

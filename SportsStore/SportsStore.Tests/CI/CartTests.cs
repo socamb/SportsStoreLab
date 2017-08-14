@@ -7,7 +7,7 @@ using SportsStore.Domain.Abstract;
 using System.Web.Mvc;
 using SportsStore.WebUI.Models;
 
-namespace SportsStore.UnitTests
+namespace SportsStore.UnitTests.CI
 {
     [TestClass]
     public class CartTests
