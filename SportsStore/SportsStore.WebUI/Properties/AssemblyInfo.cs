@@ -33,7 +33,7 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // We keep the version we are developing proper here. The builds will change this and add build number
 // Is there a better way?? 
-[assembly: AssemblyVersion("1.0.7.0")]
-[assembly: AssemblyInformationalVersion("1.0.7.0")]
-[assembly: AssemblyFileVersion("1.0.7.0")]
+[assembly: AssemblyVersion("1.0.8.0")]
+[assembly: AssemblyInformationalVersion("1.0.8.0")]
+[assembly: AssemblyFileVersion("1.0.8.0")]
 
