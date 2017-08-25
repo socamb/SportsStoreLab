@@ -22,6 +22,7 @@ namespace SportsStore.Tests.Selenium
         }
         private TestContext testContextInstance;
         public string Url;
+        public string U;
 
 
         // Initalize the driver and set the URL we will use for our Selenium Tests

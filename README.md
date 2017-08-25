@@ -1,6 +1,8 @@
 # Introduction
 This project contains the source code for SportsStore. SportsStore is a ...
 
+This is the main project for dev ops lab
+
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 1.	Installation process
