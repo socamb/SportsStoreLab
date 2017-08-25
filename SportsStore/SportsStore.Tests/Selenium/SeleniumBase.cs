@@ -29,7 +29,8 @@ namespace SportsStore.Tests.Selenium
         public void Init()
         {
             // Gets url from test.runsettings
-            Url = TestContext.Properties["appUrl"].ToString();
+            // Url = TestContext.Properties["appUrl"].ToString();
+            Url = "http://localhost:51917/admin/index";
             Driver.Initalize();
         }
 
