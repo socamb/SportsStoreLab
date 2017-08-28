@@ -80,8 +80,8 @@ namespace SportsStore.Domain.Concrete {
                 if (emailSettings.WriteAsFile) {
                     mailMessage.BodyEncoding = Encoding.ASCII;
                 }
-
-                smtpClient.Send(mailMessage);
+                // This is commented out becasue there is no email server
+                // smtpClient.Send(mailMessage);
             }
         }
     }
