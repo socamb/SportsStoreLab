@@ -22,6 +22,7 @@ namespace SportsStore.Tests.Selenium
         }
         private TestContext testContextInstance;
         public string Url;
+        public string U;
 
 
         // Initalize the driver and set the URL we will use for our Selenium Tests
@@ -30,6 +31,7 @@ namespace SportsStore.Tests.Selenium
         {
             // Gets url from test.runsettings
             Url = TestContext.Properties["appUrl"].ToString();
+            //Url = "http://localhost:51917/admin/index";
             Driver.Initalize();
         }
 
