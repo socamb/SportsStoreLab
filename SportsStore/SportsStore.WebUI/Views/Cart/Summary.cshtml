@@ -9,6 +9,6 @@
 @*R2A Demo Bug Simulation*@
 <div class="navbar-text navbar-right">
     <b>Your cart is shown below:</b>
-    @Model.Lines.Sum(x => x.Quantity + 1)  item(s),
+    @Model.Lines.Sum(x => x.Quantity)  item(s),
     @Model.ComputeTotalValue().ToString("c")
 </div>
