@@ -185,6 +185,7 @@ namespace SportsStore.Tests.CI
 
             //assert
             Assert.AreEqual(categoryToSelect, result);
+            
 
         }
 
@@ -192,10 +193,7 @@ namespace SportsStore.Tests.CI
         [TestCategory("CI_Build")]
         public void Generate_Category_specific_count()
         {
-
             // Arrange
-            //??
-
             Mock<IProductRepository> mock = new Mock<IProductRepository>();
             mock.Setup(m => m.Products).Returns(new Product[] {
                 new Product {ProductID = 1, Name = "P1", Category = "Cat1"},
@@ -217,9 +215,6 @@ namespace SportsStore.Tests.CI
             Assert.AreEqual(res2, 2);
             Assert.AreEqual(res3, 1);
             Assert.AreEqual(res4, 5);
-
-
-
         }
     }
 }
