@@ -141,14 +141,12 @@ namespace SportsStore.Tests.CI
         public void Can_Create_Categories()
         {
             // Arrange
-            // ?? What is this ??
             Mock<IProductRepository> mock = new Mock<IProductRepository>();
             mock.Setup(m => m.Products).Returns(new Product[] {
                 new Product {ProductID = 1, Name = "P1", Category = "Apples"},
                 new Product {ProductID = 2, Name = "P2", Category = "Apples"},
                 new Product {ProductID = 3, Name = "P3", Category = "Plums"},
                 new Product {ProductID = 4, Name = "P4", Category = "Oranges"},
-
             });
 
             // Arrange 
@@ -158,10 +156,10 @@ namespace SportsStore.Tests.CI
             string[] results = ((IEnumerable<string>)target.Menu().Model).ToArray();
 
             //assert
-            Assert.AreEqual(results.Length, 3);
-            Assert.AreEqual(results[0], "Apples");
-            Assert.AreEqual(results[1], "Oranges");
-            Assert.AreEqual(results[2], "Plums");
+            Assert.AreEqual(3, results.Length);
+            Assert.AreEqual("Apples", results[0]);
+            Assert.AreEqual("Oranges", results[1]);
+            Assert.AreEqual("Plums", results[2]);
         }
 
         [TestMethod]
