@@ -23,7 +23,21 @@ namespace SportsStore.Domain.Entities
         public decimal Price { get; set; }
 
         [Required(ErrorMessage = "Please specify a category")]
-        public string Category { get; set; }
+        private string category;
+        //public string Category { get; set; }
+        public string Category
+        {
+            get
+            {
+                return this.category;
+            }
+            set
+            {
+                this.category = value;
+            }
+        }
+
+
 
         public byte[] ImageData { get; set; }
         public string ImageMimeType { get; set; }
