@@ -22,8 +22,23 @@ namespace SportsStore.Domain.Entities
         [Range(0.01, double.MaxValue, ErrorMessage = "Please enter a postive price")]
         public decimal Price { get; set; }
 
+
+        // This is used to demonstrate a failed Can_Create_Categories Unit Test
         [Required(ErrorMessage = "Please specify a category")]
-        public string Category { get; set; }
+        private string category;
+        public string Category
+        {
+            get
+            {
+                return this.category;
+            }
+            set
+            {
+                this.category = value;
+            }
+        }
+
+
 
         public byte[] ImageData { get; set; }
         public string ImageMimeType { get; set; }
