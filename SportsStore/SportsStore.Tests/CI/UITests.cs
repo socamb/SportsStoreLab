@@ -136,6 +136,7 @@ namespace SportsStore.Tests.CI
 
         }
 
+        // This is the unit test used for the Dev Ops Lab and to Simulate a failed unit test
         [TestMethod]
         [TestCategory("CI_Build")]
         public void Can_Create_Categories()
