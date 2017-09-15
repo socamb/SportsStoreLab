@@ -30,7 +30,7 @@ namespace SportsStore.Domain.Entities
         {
             get
             {
-                return this.category;
+                return this.category + "zz";
             }
             set
             {
