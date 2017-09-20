@@ -19,6 +19,7 @@ namespace SportsStore.Tests.Integration
         }
 
 
+        // This is run by the Nightly release to the Build Environment, not the CI Build
         [TestMethod]
         [TestCategory("Nightly_Build")]
         public void Can_AddProductToDb()
@@ -27,14 +28,6 @@ namespace SportsStore.Tests.Integration
             Product myProduct = new Product { Name = "xxx", Category = "123", Description = "desc", Price = 20m };
 
             myProductRepo.SaveProduct(myProduct);
-
-
-
-
-
-
-
-
         }
 
 
