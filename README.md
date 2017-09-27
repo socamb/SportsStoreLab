@@ -1,7 +1,7 @@
 # Introduction
 This project contains the source code for SportsStore. SportsStore is a hello world implementatyion for DevOps.
 
-[Roadmap To Agile] (http://roadmaptoagile.com/devops-lab-1)
+[Roadmap To Agile](http://roadmaptoagile.com/devops-lab-1)
 
 This is the main project for dev ops lab
 
