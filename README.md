@@ -8,7 +8,7 @@ Please review the lab information in the above link. THis is a Microsoft MVC5 so
 2.	SportsStore.Tests
 3.	SportsStore.WebUi
 4.	SportsStoreDB
-5. SportsStoreAutomation
+5.  SportsStoreAutomation
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests. 
