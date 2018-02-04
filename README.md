@@ -2,7 +2,8 @@
 This repository contains the source code for SportsStore. SportsStore is a hello world implementatyion for DevOps. Please see 
 [Roadmap To Agile DevOps Lab](http://roadmaptoagile.com/devops-lab-1) for details.
 
-The infrastructure for SportsStore is implemented using the Infrastructure as Code approach. THis repository is available [here](https://github.com/socamb/SportsStoreInfrastructure)
+The infrastructure for SportsStore is implemented using the Infrastructure as Code approach. This repository is available [here](https://github.com/socamb/SportsStoreInfrastructure)
+NOTE: I am currently working on a delivery pipeline using Team City, Octopus Debloy and Jira. 
 
 # Getting Started
 Please review the lab information in the above link to understand how this codebase is used in a DevOps Implementation.
