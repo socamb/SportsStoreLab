@@ -9,6 +9,6 @@
 @*This is used to simulate a bug in the system*@
 <div class="navbar-text navbar-right">
     <b>Your cart appears below for your review:</b>
-    @Model.Lines.Sum(x => x.Quantity)  item(s),
+    @Model.Lines.Sum(x => x.Quantity + 1) item(s),
     @Model.ComputeTotalValue().ToString("c")
 </div>
